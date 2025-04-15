@@ -2,10 +2,9 @@ import { DynamicModule, Module, Provider } from '@nestjs/common';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { OpenAiService } from './openai.service';
 import openAiConfig, { OpenAiOptions } from './openai.config';
-import { OpenAiExampleController } from './controllers/openai-example.controller';
 
 @Module({
-  controllers: [OpenAiExampleController],
+  controllers: [],
   providers: [OpenAiService],
   imports: [ConfigModule.forFeature(openAiConfig)],
   exports: [OpenAiService],
