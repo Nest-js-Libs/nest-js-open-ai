@@ -10,6 +10,7 @@ import {
     ValidateNested,
 } from 'class-validator';
 import { Type } from 'class-transformer';
+import { ChatMessage, ChatRole } from "src/lib/types/openai.types";
 
 export class GenerateTextDto {
     @ApiProperty({
